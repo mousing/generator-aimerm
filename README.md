@@ -1,12 +1,12 @@
-# Survey Gorilla Generator for MEANStack 
+# Aimerm Angular Front-End Generator for MEANStack 
 
 > Yeoman generator for creating MEAN stack applications, using MongoDB, Express, AngularJS, and Node - lets you quickly set up a project following best practices.
 
 ## Usage
 
-Install `generator-sg`:
+Install `generator-aimerm`:
 ```
-npm install -g generator-sg
+npm install -g generator-aimerm
 ```
 
 Make a new directory, and `cd` into it:
@@ -14,9 +14,9 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo sg`, optionally passing an app name:
+Run `yo aimerm`, optionally passing an app name:
 ```
-yo sg [app-name]
+yo aimerm [app-name]
 ```
 
 Run `grunt` for building, `grunt serve` for preview, and `grunt serve:dist` for a preview of the built app.
@@ -57,28 +57,28 @@ A grunt task looks for new files in your `client/app` and `client/components` fo
 Available generators:
 
 * App
-    - [sg](#app) (aka [sg:app](#app))
+    - [aimerm](#app) (aka [aimerm:app](#app))
 * Server Side
-    - [sg:endpoint](#endpoint)
+    - [aimerm:endpoint](#endpoint)
 * Client Side
-    - [sg:route](#route)
-    - [sg:controller](#controller)
-    - [sg:filter](#filter)
-    - [sg:directive](#directive)
-    - [sg:service](#service)
-    - [sg:provider](#service)
-    - [sg:factory](#service)
-    - [sg:decorator](#decorator)
+    - [aimerm:route](#route)
+    - [aimerm:controller](#controller)
+    - [aimerm:filter](#filter)
+    - [aimerm:directive](#directive)
+    - [aimerm:service](#service)
+    - [aimerm:provider](#service)
+    - [aimerm:factory](#service)
+    - [aimerm:decorator](#decorator)
 * Deployment
-    - [sg:openshift](#openshift)
-    - [sg:heroku](#heroku)
+    - [aimerm:openshift](#openshift)
+    - [aimerm:heroku](#heroku)
 
 ### App
 Sets up a new AngularJS + Express app, generating all the boilerplate you need to get started.
 
 Example:
 ```bash
-yo sg
+yo aimerm
 ```
 
 ### Endpoint
@@ -87,7 +87,7 @@ Generates a new API endpoint.
 
 Example:
 ```bash
-yo sg:endpoint message
+yo aimerm:endpoint message
 [?] What will the url of your endpoint to be? /api/messages
 ```
 
@@ -104,7 +104,7 @@ Generates a new route.
 
 Example:
 ```bash
-yo sg:route myroute
+yo aimerm:route myroute
 [?] Where would you like to create this route? client/app/
 [?] What will the url of your route be? /myroute
 ```
@@ -123,7 +123,7 @@ Generates a controller.
 
 Example:
 ```bash
-yo sg:controller user
+yo aimerm:controller user
 [?] Where would you like to create this controller? client/app/
 ```
 
@@ -137,7 +137,7 @@ Generates a directive.
 
 Example:
 ```bash
-yo sg:directive myDirective
+yo aimerm:directive myDirective
 [?] Where would you like to create this directive? client/app/
 [?] Does this directive need an external html file? Yes
 ```
@@ -153,7 +153,7 @@ Produces:
 
 Example:
 ```bash
-yo sg:directive simple
+yo aimerm:directive simple
 [?] Where would you like to create this directive? client/app/
 [?] Does this directive need an external html file? No
 ```
@@ -168,7 +168,7 @@ Generates a filter.
 
 Example:
 ```bash
-yo sg:filter myFilter
+yo aimerm:filter myFilter
 [?] Where would you like to create this filter? client/app/
 ```
 
@@ -182,7 +182,7 @@ Generates an AngularJS service.
 
 Example:
 ```bash
-yo sg:service myService
+yo aimerm:service myService
 [?] Where would you like to create this service? client/app/
 ```
 
@@ -199,7 +199,7 @@ Generates an AngularJS service decorator.
 
 Example:
 ```bash
-yo sg:decorator serviceName
+yo aimerm:decorator serviceName
 [?] Where would you like to create this decorator? client/app/
 ```
 
@@ -211,7 +211,7 @@ Produces
 
 Deploying to OpenShift can be done in just a few steps:
 
-    yo sg:openshift
+    yo aimerm:openshift
 
 A live application URL will be available in the output.
 
@@ -248,7 +248,7 @@ Commit and push the resulting build, located in your dist folder:
 
 Deploying to heroku only takes a few steps.
 
-    yo sg:heroku
+    yo aimerm:heroku
 
 To work with your new heroku app using the command line, you will need to run any `heroku` commands from the `dist` folder.
 
